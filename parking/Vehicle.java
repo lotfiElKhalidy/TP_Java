@@ -1,6 +1,8 @@
 class Vehicle {
     protected String IDlicense;
     
+
+    // The constructor ganerates a random registration license for the new object
     public Vehicle() {
         double randomNumber = Math.random()*1000;
         int integerRand = (int) randomNumber;
