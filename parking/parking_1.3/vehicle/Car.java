@@ -1,6 +1,6 @@
 package vehicle;
 
-class Car extends Vehicle {
+public class Car extends Vehicle {
     private int color;
     private int seats;
     

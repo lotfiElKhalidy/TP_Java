@@ -1,6 +1,6 @@
 package vehicle;
 
-class Vehicle {
+public class Vehicle {
     protected String IDlicense;
 
     // The constructor ganerates a random registration license for the new object

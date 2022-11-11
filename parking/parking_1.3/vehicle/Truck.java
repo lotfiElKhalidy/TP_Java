@@ -1,6 +1,6 @@
 package vehicle;
 
-class Truck extends Vehicle {
+public class Truck extends Vehicle {
     private double capacity; 
     
     public Truck() {
