@@ -1,4 +1,4 @@
-class Car extends Vehicle{
+class Car extends Vehicle {
     private int color;
     private int seats;
     
