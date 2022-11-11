@@ -1,11 +1,9 @@
-import vehicle.Vehicle;
 import vehicle.Car;
 import vehicle.Truck;
+import vehicle.Vehicle;
 
-public class Parking
-{
-    public static void main(String[] argv)
-    {
+public class Parking {
+    public static void main(String[] argv) {
         Vehicle vehicle1 = new Vehicle();
         Vehicle vehicle2 = new Vehicle("ID5555");
         
