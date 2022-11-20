@@ -34,12 +34,16 @@ class BankingAccount {
         overdraft = overdraftEntry;
     }
 
-    public void withdrawal(double amount) {
+    public void withdrawal(double amount) //throws IllegalArgumentException, AutorisationException 
+    {
         double newBalance = balance - amount;
         
-        if (amount < 0.0)  
+        if (amount < 0.0) {
+            //throw new IllegalArgumentException("Negative amount");
             System.out.println("Error : Please enter a positive amount.");
+        }
         else if (newBalance < overdraft)
+            //throw new AutorisationException();
             System.out.println("This operation is impossible. You'll be overdrawn.");
         else balance = newBalance;
     }
