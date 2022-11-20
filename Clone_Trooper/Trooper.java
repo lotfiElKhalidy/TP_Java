@@ -1,10 +1,11 @@
-class Trooper {
+class Trooper implements Cloneable {
     private int ID;
     private String name;
     private int stamina;
 
     static public int count = 0;
 
+    /*
     enum Grade {
         TROOPER {
             public String getGrade() { return "WHITE"; } 
@@ -24,6 +25,7 @@ class Trooper {
 
         abstract public String getGrade();
     }
+    */
 
     public Trooper() {
         System.out.println("----------------------------------");
@@ -77,6 +79,21 @@ class Trooper {
 
     public void setStamina(int staminaVar) {
         stamina = staminaVar;
+    }
+
+    public Object clone() {
+        Trooper object = null;
+        try {
+            object = (Trooper) super.clone();
+        } catch(CloneNotSupportedException cnse) {
+            cnse.printStackTrace(System.err);
+        }
+        // s'occuper des attributs "compliqués" 
+        // si object est non null
+        // MAIS PAS TOUT DE SUITE
+        // uniquement quand on vous le demande
+
+        return object;
     }
 
     public void displayTrooper() {
